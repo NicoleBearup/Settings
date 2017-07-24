@@ -37,7 +37,7 @@ class SettingsController {
     // MARK: Internal Methods
     
     func setting(at indexPath: IndexPath) -> Setting {
-        return mySettings(IndexPath.row)
+        return mySettings[indexPath.row]
     }
     
 }

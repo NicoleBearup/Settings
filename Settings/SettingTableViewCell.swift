@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SettingTableViewCellDelegate: class {
+    func settingValueChanged(_ cell: SettingTableViewCell, selected: Bool)
+}
+
 class SettingTableViewCell: UITableViewCell {
 
     // MARK: IBOutlets
@@ -19,7 +23,9 @@ class SettingTableViewCell: UITableViewCell {
     // Label
     @IBOutlet weak var settingLabel: UILabel!
     
+    // MARK:  Internal properties
     
+    weak var delegate: SettingTableViewCellDelegate?
     
     // MARK: Lifecycle
     
@@ -35,4 +41,10 @@ class SettingTableViewCell: UITableViewCell {
         backgroundColor = setting.isSet ? .yellow : .white
     }
     
+    // MARK: Internal method
+    
+    @IBAction func settingSwitchValueChanged() {
+        // When value changes, update the cell and the setting
+        delegate?.settingValueChanged(self, selected: settingSwitch.isOn)
+    }
 }
