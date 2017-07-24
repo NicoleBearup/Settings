@@ -52,10 +52,10 @@
 		542E3B051F264C19007D638C /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				542E3B061F264C19007D638C /* AppDelegate.swift */,
 				542E3B1B1F264F39007D638C /* UI */,
 				542E3B191F264EA0007D638C /* ModelControllers */,
 				542E3B181F264E98007D638C /* Model */,
-				542E3B0F1F264C19007D638C /* LaunchScreen.storyboard */,
 				542E3B1A1F264F27007D638C /* Resources */,
 			);
 			path = Settings;
@@ -78,9 +78,9 @@
 		542E3B1A1F264F27007D638C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				542E3B121F264C19007D638C /* Info.plist */,
 				542E3B0D1F264C19007D638C /* Assets.xcassets */,
-				542E3B061F264C19007D638C /* AppDelegate.swift */,
+				542E3B0F1F264C19007D638C /* LaunchScreen.storyboard */,
+				542E3B121F264C19007D638C /* Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
