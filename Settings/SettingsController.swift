@@ -11,9 +11,17 @@ import UIKit
 
 class SettingsController {
     
+    static let shared = SettingsController()
+    
     // MARK: Internal Properties
     
-    let mySettings: [Setting]
+    private let mySettings: [Setting]
+    
+    // MARK: Computed Properties
+    
+    var numberOfSettings: Int {
+        return mySettings.count
+    }
     
     // MARK: Initializers
     
@@ -24,6 +32,12 @@ class SettingsController {
         let updates = Setting(name: "Updates", image:UIImage(named: "app"), isSet: false)
         
         mySettings = [music, apps, books, updates]
+    }
+    
+    // MARK: Internal Methods
+    
+    func setting(at indexPath: IndexPath) -> Setting {
+        return mySettings(IndexPath.row)
     }
     
 }

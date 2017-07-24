@@ -13,6 +13,8 @@
 		542E3B111F264C19007D638C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542E3B0F1F264C19007D638C /* LaunchScreen.storyboard */; };
 		542E3B1D1F26610C007D638C /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E3B1C1F26610C007D638C /* Setting.swift */; };
 		542E3B1F1F26625E007D638C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E3B1E1F26625E007D638C /* SettingsController.swift */; };
+		542E3B211F2668B5007D638C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E3B201F2668B5007D638C /* SettingsViewController.swift */; };
+		542E3B231F266BF3007D638C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542E3B221F266BF3007D638C /* SettingTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		542E3B121F264C19007D638C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542E3B1C1F26610C007D638C /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		542E3B1E1F26625E007D638C /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		542E3B201F2668B5007D638C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		542E3B221F266BF3007D638C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				542E3B0A1F264C19007D638C /* Main.storyboard */,
+				542E3B201F2668B5007D638C /* SettingsViewController.swift */,
+				542E3B221F266BF3007D638C /* SettingTableViewCell.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				542E3B1F1F26625E007D638C /* SettingsController.swift in Sources */,
+				542E3B231F266BF3007D638C /* SettingTableViewCell.swift in Sources */,
 				542E3B1D1F26610C007D638C /* Setting.swift in Sources */,
 				542E3B071F264C19007D638C /* AppDelegate.swift in Sources */,
+				542E3B211F2668B5007D638C /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
